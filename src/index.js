@@ -64,7 +64,7 @@ function getForecast(city) {
 }
 
 function formatDay(timestamp) {
-  let date = new Date(timestamp * 10000);
+  let date = new Date(timestamp * 1000);
 
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   return days[date.getDay()];
